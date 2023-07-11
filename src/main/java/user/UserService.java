@@ -4,7 +4,7 @@ import io.grpc.stub.StreamObserver;
 import org.example.User;
 import org.example.userGrpc.userImplBase;
 
-public class userService extends userImplBase {
+public class UserService extends userImplBase {
     @Override
     public void login(User.loginRequest request, StreamObserver<User.APIResponse> responseObserver) {
         System.out.println("Inside login method...");
